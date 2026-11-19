@@ -1,0 +1,16 @@
+{
+  "name": "docs-hermes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "lucide-static": "^1.74.0",
+    "sharp": "^0.35.5",
+    "vitepress": "^1.6.4"
+  }
+}

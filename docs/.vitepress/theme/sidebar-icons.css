@@ -1,0 +1,73 @@
+/* Ikon sidebar: mask data-URI dari Lucide, warna mengikuti var(--vp-c-brand-1) */
+
+.VPSidebarItem .item > .link .text::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: -3px;
+  background-color: var(--vp-c-brand-1);
+  -webkit-mask: var(--icon) no-repeat center / contain;
+  mask: var(--icon) no-repeat center / contain;
+}
+
+.VPSidebarItem .item > .link[href*="/guide/overview"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-map%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Cpath%20d%3D%22M14.106%205.553a2%202%200%200%200%201.788%200l3.659-1.83A1%201%200%200%201%2021%204.619v12.764a1%201%200%200%201-.553.894l-4.553%202.277a2%202%200%200%201-1.788%200l-4.212-2.106a2%202%200%200%200-1.788%200l-3.659%201.83A1%201%200%200%201%203%2019.381V6.618a1%201%200%200%201%20.553-.894l4.553-2.277a2%202%200%200%201%201.788%200z%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M15%205.764v15%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M9%203.236v15%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.VPSidebarItem .item > .link[href*="/guide/preparation"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-clipboard-list%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Crect%20width%3D%228%22%20height%3D%224%22%20x%3D%228%22%20y%3D%222%22%20rx%3D%221%22%20ry%3D%221%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M16%204h2a2%202%200%200%201%202%202v14a2%202%200%200%201-2%202H6a2%202%200%200%201-2-2V6a2%202%200%200%201%202-2h2%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M12%2011h4%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M12%2016h4%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M8%2011h.01%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M8%2016h.01%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.VPSidebarItem .item > .link[href*="/guide/vps-setup"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-server%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Crect%20width%3D%2220%22%20height%3D%228%22%20x%3D%222%22%20y%3D%222%22%20rx%3D%222%22%20ry%3D%222%22%20%2F%3E%0A%20%20%3Crect%20width%3D%2220%22%20height%3D%228%22%20x%3D%222%22%20y%3D%2214%22%20rx%3D%222%22%20ry%3D%222%22%20%2F%3E%0A%20%20%3Cline%20x1%3D%226%22%20x2%3D%226.01%22%20y1%3D%226%22%20y2%3D%226%22%20%2F%3E%0A%20%20%3Cline%20x1%3D%226%22%20x2%3D%226.01%22%20y1%3D%2218%22%20y2%3D%2218%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.VPSidebarItem .item > .link[href*="/guide/installation"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-download%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Cpath%20d%3D%22M12%2015V3%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M21%2015v4a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2v-4%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22m7%2010%205%205%205-5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.VPSidebarItem .item > .link[href*="/guide/gemini-api"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-key-round%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Cpath%20d%3D%22M2.586%2017.414A2%202%200%200%200%202%2018.828V21a1%201%200%200%200%201%201h3a1%201%200%200%200%201-1v-1a1%201%200%200%201%201-1h1a1%201%200%200%200%201-1v-1a1%201%200%200%201%201-1h.172a2%202%200%200%200%201.414-.586l.814-.814a6.5%206.5%200%201%200-4-4z%22%20%2F%3E%0A%20%20%3Ccircle%20cx%3D%2216.5%22%20cy%3D%227.5%22%20r%3D%22.5%22%20fill%3D%22currentColor%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.VPSidebarItem .item > .link[href*="/guide/telegram-bot"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-send%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Cpath%20d%3D%22M14.536%2021.686a.5.5%200%200%200%20.937-.024l6.5-19a.496.496%200%200%200-.635-.635l-19%206.5a.5.5%200%200%200-.024.937l7.93%203.18a2%202%200%200%201%201.112%201.11z%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22m21.854%202.147-10.94%2010.939%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.VPSidebarItem .item > .link[href*="/guide/connect-telegram"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-link%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Cpath%20d%3D%22M10%2013a5%205%200%200%200%207.54.54l3-3a5%205%200%200%200-7.07-7.07l-1.72%201.71%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M14%2011a5%205%200%200%200-7.54-.54l-3%203a5%205%200%200%200%207.07%207.07l1.71-1.71%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.VPSidebarItem .item > .link[href*="/guide/systemd"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-infinity%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Cpath%20d%3D%22M6%2016c5%200%207-8%2012-8a4%204%200%200%201%200%208c-5%200-7-8-12-8a4%204%200%201%200%200%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.VPSidebarItem .item > .link[href*="/guide/testing"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-list-checks%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Cpath%20d%3D%22M13%205h8%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M13%2012h8%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M13%2019h8%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22m3%2017%202%202%204-4%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22m3%207%202%202%204-4%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.VPSidebarItem .item > .link[href*="/guide/operations"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-terminal%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Cpath%20d%3D%22M12%2019h8%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22m4%2017%206-6-6-6%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.VPSidebarItem .item > .link[href*="/guide/mcp"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-puzzle%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Cpath%20d%3D%22M15.39%204.39a1%201%200%200%200%201.68-.474%202.5%202.5%200%201%201%203.014%203.015%201%201%200%200%200-.474%201.68l1.683%201.682a2.414%202.414%200%200%201%200%203.414L19.61%2015.39a1%201%200%200%201-1.68-.474%202.5%202.5%200%201%200-3.014%203.015%201%201%200%200%201%20.474%201.68l-1.683%201.682a2.414%202.414%200%200%201-3.414%200L8.61%2019.61a1%201%200%200%200-1.68.474%202.5%202.5%200%201%201-3.014-3.015%201%201%200%200%200%20.474-1.68l-1.683-1.682a2.414%202.414%200%200%201%200-3.414L4.39%208.61a1%201%200%200%201%201.68.474%202.5%202.5%200%201%200%203.014-3.015%201%201%200%200%201-.474-1.68l1.683-1.682a2.414%202.414%200%200%201%203.414%200z%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.VPSidebarItem .item > .link[href*="/guide/troubleshooting"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-wrench%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Cpath%20d%3D%22M14.7%206.3a1%201%200%200%200%200%201.4l1.6%201.6a1%201%200%200%200%201.4%200l3.106-3.105c.32-.322.863-.22.983.218a6%206%200%200%201-8.259%207.057l-7.91%207.91a1%201%200%200%201-2.999-3l7.91-7.91a6%206%200%200%201%207.057-8.259c.438.12.54.662.219.984z%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.VPSidebarItem .item > .link[href*="/guide/security"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-shield-check%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Cpath%20d%3D%22M20%2013c0%205-3.5%207.5-7.66%208.95a1%201%200%200%201-.67-.01C7.5%2020.5%204%2018%204%2013V6a1%201%200%200%201%201-1c2%200%204.5-1.2%206.24-2.72a1.17%201.17%200%200%201%201.52%200C14.51%203.81%2017%205%2019%205a1%201%200%200%201%201%201z%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22m9%2012%202%202%204-4%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.VPSidebarItem .item > .link[href*="/guide/checklist-faq"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-circle-check%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2210%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22m16%209-5.5%205.5L8%2012%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.VPSidebarItem .item > .link[href*="/guide/references"] .text::before {
+  --icon: url("data:image/svg+xml,%3C!--%20%40license%20lucide-static%20v1.74.0%20-%20ISC%20--%3E%0A%3Csvg%0A%20%20class%3D%22lucide%20lucide-book-open%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22%23000%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Cpath%20d%3D%22M12%205v16%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M20.001%2019A2%202%200%200022%2017V5a2%202%200%2000-1.999-2L16%203.002A5%205%200%200012%205a5%205%200%2000-4-2H4a2%202%200%2000-2%202v12a2%202%200%20001.999%202H8a5%205%200%20014%202%205%205%200%20014-2z%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}

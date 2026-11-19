@@ -1,0 +1,64 @@
+/* Palette Hermes CLI: kuning + orange */
+
+:root {
+  /* Teks, link, dan elemen aktif */
+  --vp-c-brand-1: #c2410c;
+  /* Status hover (lebih gelap di terang) */
+  --vp-c-brand-2: #9a3412;
+  /* Latar elemen solid */
+  --vp-c-brand-3: #ea580c;
+  /* Latar lembut untuk badge/tag */
+  --vp-c-brand-soft: rgba(234, 88, 12, 0.14);
+
+  /* Tombol brand: teks gelap di atas isi oranye terang (kontras AA) */
+  --vp-button-brand-text: #201204;
+  --vp-button-brand-hover-text: #201204;
+  --vp-button-brand-active-text: #201204;
+  --vp-button-brand-bg: #ea580c;
+  --vp-button-brand-hover-bg: #f97316;
+  --vp-button-brand-active-bg: #fb923c;
+
+  /* Judul hero: gradien kuning -> orange */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #d97706 30%, #c2410c 70%);
+
+  /* Cahaya hangat di belakang gambar hero */
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    rgba(250, 204, 21, 0.4) 50%,
+    rgba(249, 115, 22, 0.4) 50%
+  );
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+.dark {
+  /* Teks/link amber terang agar tetap kontras di latar gelap */
+  --vp-c-brand-1: #fbbf24;
+  --vp-c-brand-2: #fde047;
+  --vp-c-brand-3: #ea580c;
+  --vp-c-brand-soft: rgba(251, 191, 36, 0.16);
+
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #facc15 30%, #fb923c 70%);
+}
+
+/* Permukaan browser mengikuti palet */
+::selection {
+  background: rgba(249, 115, 22, 0.35);
+}
+
+html {
+  scrollbar-color: rgba(249, 115, 22, 0.55) transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(249, 115, 22, 0.55);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(249, 115, 22, 0.8);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
